@@ -56,7 +56,7 @@ height: auto;
    <!--  <input type="email" name="email" placeholder="Seu email" required>  -->
      
 
-     <div class="g-recaptcha" data-sitekey="6LeGg-waAAAAAM_22sXVltazxdc0EPWFWaO3LV_-"></div>
+     <div class="g-recaptcha" data-sitekey="YOUR SITE KEY"></div>
      
      <input type="submit" name="submit" value="Login" style="width: 80%;">
     
@@ -69,7 +69,7 @@ height: auto;
           $user = $_POST['usuario'];
           $senha = $_POST['senha'];
          
-          $secretKey = "6LeGg-waAAAAACS_MoIR0eh1Tmbn2Td2Y3G5dozJ";
+          $secretKey = "YOUR SECRET KEY HERE";
           $responseKey = $_POST['g-recaptcha-response'];
           $UserIP = $_SERVER['REMOTE_ADDR'];
           $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$UserIP";
